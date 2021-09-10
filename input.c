@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<ctype.h>
 #include<string.h>
-main()
+#include<math.h>
+int main()
 {
 int i,n,lc=0,uc=0,dc=0,sc=0;
 char pass[100], user[100];
@@ -13,22 +14,22 @@ if(n>=8){
 
 for(i=0;i<n;i++)
 {
-    if(pass[i]==' ')
-    {
-    printf("\n\tYou can't give any space \n\tTry again ");goto LOOP;
-    }
-else
-    if(isalpha(pass[i]))
-    {
-    if(isupper(pass[i]))
-    uc++;
-    else
-    lc++;
-    }
-    else if(isdigit(pass[i]))
-    dc++;
-    else if((ispunct(pass[i]))&&(isgraph(pass[i])))
-    sc++;
+     if(pass[i]==' ')
+     {
+         printf("\n\tYou can't give any space \n\tTry again ");goto LOOP;
+     }
+     else
+         if(isalpha(pass[i]))
+         {
+         if(isupper(pass[i]))
+         uc++;
+         else
+        lc++;
+         }
+     else if(isdigit(pass[i]))
+     dc++;
+     else if((ispunct(pass[i]))&&(isgraph(pass[i])))
+     sc++;
 }
 }
 else
