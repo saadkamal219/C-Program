@@ -22,7 +22,7 @@
     prevTotal = dice1 + dice2 + dice3;
     printf("I just rolled three die, the sum of all three was: %d\n", diceTotal);
  //Initialization
- printf("Let's play a game. Are you interested? [y/n]");
+ printf("Let's play a game. Are you interested? [y/n] \n");
  scanf("%c", &yn);
  if ( yn == 'n' )
  {
@@ -64,7 +64,7 @@
     }
  printf("That was fun!!!! Right? \n");
  printf("How many points did you earn?? [Don't lie] \n");
- scanf("%d", point);
+ scanf("%d", &point);
  if ( point >= 7 )
  {
      printf("Damnnnn dude, you are a blaster, %d point is not a joke. Well played \n", point);
@@ -72,7 +72,7 @@
  if ( point >= 5 )
  {
      printf("Huhhhhh. You are little bit confused, but %d point is not bad at all \n", point);
- }
+ } 
  if ( point >= 3 )
  {
      printf("What's wrong mister?? Don't you get it?");
