@@ -13,7 +13,6 @@ int main(){
   int point;
   char yn;
   char answer;
-  
 
   dice1 = ( rand()%6 ) + 1;
   dice2 = ( rand()%6 ) + 1;
@@ -29,13 +28,14 @@ int main(){
 
  if ( yn == 'n' )
  {
-     printf("What's wrong with you dude. Won't you get bored sitting like that without donig anything? \n", yn);
+     printf("What's wrong with you dude. Won't you get bored sitting like that without donig anything? \n", yn);       
  }else
  {  
-  printf("Let's goooo \n", yn);     
+  printf("Let's goooo \n", yn);  
+
   for ( i = 0; i < 10; i++)
   {
-      printf("Will the next roll be higher(h), lower(l) or the same(s) as %d?: ", dice_total);
+      printf("Will the next roll be higher(h), lower(l) or the same(s) as %d ?: ", dice_total);
         scanf(" %c", &answer);
 
          dice1 = ( rand()%6 ) + 1;
