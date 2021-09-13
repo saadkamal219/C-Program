@@ -5,9 +5,13 @@
 int main()
 {
 int i,n,lc=0,uc=0,dc=0,sc=0;
-char pass[100], user[100];
+char pass[100];
+char user[100];
+printf("1. Password must be more than 8 characters \n");
+printf("2. Password must contain minimum a digit, an upper case letter, a lower case letter, a special symbol. \n");
+printf("3. You can't use any space \n");
 LOOP:
-printf("\nEnter the password:");
+printf("\v Enter the password: \n");
 gets(pass);
 n=strlen(pass);
 if(n>=8){
