@@ -12,7 +12,7 @@ gets(pass);
 n=strlen(pass);
 if(n>=8){
 
-for(i=0;i<n;i++)
+for(i=0;i<n;i++)  
 {
      if(pass[i]==' ')
      {
