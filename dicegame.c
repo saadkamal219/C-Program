@@ -13,6 +13,7 @@ int main(){
   int point;
   char yn;
   char answer;
+  char again;
 
   dice1 = ( rand()%6 ) + 1;
   dice2 = ( rand()%6 ) + 1;
@@ -32,7 +33,7 @@ int main(){
  }else
  {  
   printf("Let's goooo \n", yn);  
-
+ 
   for ( i = 0; i < 10; i++)
   {
       printf("Will the next roll be higher(h), lower(l) or the same(s) as %d ?: ", dice_total);
@@ -88,13 +89,15 @@ int main(){
  } 
  else if ( point >= 3 && point <= 4 )
  {
-     printf("What's wrong mister?? Don't you get it?");
+     printf("What's wrong mister?? Don't you get it? \n");
  }
  else if ( point >= 0 && point <= 2 )
  {
-     printf("You are a badass....hahahaha");
+     printf("You are a badass....hahahaha \n");
   }
- }     
+ }   
+ 
+ 
  
 return 0;
 }
