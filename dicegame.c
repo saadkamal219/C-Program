@@ -15,7 +15,7 @@ int main(){
   char answer;
   char again;
 
-  dice1 = ( rand()%6 ) + 1;
+  dice1 = ( rand()%6 ) + 1;   
   dice2 = ( rand()%6 ) + 1;
   dice3 = ( rand()%6 ) + 1;
 
