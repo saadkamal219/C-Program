@@ -12,7 +12,7 @@ printf("2. Password must contain minimum a digit, an upper case letter, a lower 
 printf("3. You can't use any space \n");
 LOOP:
 printf("\v Enter the password: \n");
-gets(pass);
+gets(pass);  
 n=strlen(pass);
 if(n>=8){
 
